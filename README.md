@@ -6,7 +6,7 @@
 
 ### Tango Server--服务器端架构
 
-![avatar](.\snapshots\README1.png)
+<img src=".\snapshots\README1.png" style="zoom:80%;" />
 
 为了更简单的添加功能和解耦，选择了给服务器端分层，将于客户端进行交互的部分（维护在线用户、发送csv文件，接收消息等直接用到socket的部分）单做一层，作为HttpServer与客户端进行互交，然后用这个部分调用Frame部分中的类来实现各部分功能。这样就很容易在Frame部分添加新的功能而不用直接跟socket打交道，可以更好的解耦，便于扩展功能。
 
@@ -37,7 +37,7 @@ OK
 
 ### Tango Client--客户端流程
 
-![avatar](.\snapshots\README2.png)
+<img src=".\snapshots\README2.png" style="zoom:80%;" />
 
 ## 工程文件组织结构
 
@@ -161,7 +161,7 @@ def close(self):
 
 ### 操作流程
 
-![avatar](.\snapshots\README3.png)
+<img src=".\snapshots\README3.png" style="zoom:50%;" />
 
 ### 留言板界面
 
